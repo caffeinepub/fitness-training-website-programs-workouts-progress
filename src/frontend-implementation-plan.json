@@ -1,0 +1,75 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "MD SUHEL branding, blue theme background, and header logo",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "summary": "Replace existing global branding with \"MD SUHEL\" in header, footer, and HTML document title.",
+      "acceptanceCriteria": [
+        "Header brand text displays \"MD SUHEL\" instead of the current name.",
+        "Footer copyright line displays \"© {year} MD SUHEL. All rights reserved.\"",
+        "The browser tab/document title includes \"MD SUHEL\" (update frontend/index.html)."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Update the header brand/title text from the current name to \"MD SUHEL\" (keep existing navigation and sign-in/out behavior unchanged)."
+        },
+        {
+          "path": "frontend/src/components/Footer.tsx",
+          "operation": "modify",
+          "description": "Update the footer copyright text to \"© {year} MD SUHEL. All rights reserved.\" while preserving the existing attribution link."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the HTML document <title> so the browser tab includes \"MD SUHEL\"."
+        }
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "summary": "Apply a blue background theme across the app while maintaining readable contrast and consistent card/control styling.",
+      "acceptanceCriteria": [
+        "The app background is clearly blue on the main pages (application form, my applications, application detail).",
+        "Text and form controls remain accessible/legible with sufficient contrast against the new blue background.",
+        "No layout regressions: header, main content, and footer still render with proper spacing and separation."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Adjust the global theme CSS variables (notably --background and related tokens) so the overall page background is visibly blue while keeping cards, borders, and foreground text at accessible contrast in both light and dark modes."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Ensure the top-level layout continues to apply the global background utility (bg-background) and that header/main/footer spacing/separation remains consistent with the new blue theme (no new routes/pages)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "summary": "Add a generated static logo to the header next to the \"MD SUHEL\" brand text using a public asset path under frontend/public/assets/generated.",
+      "acceptanceCriteria": [
+        "A logo image is rendered in the header adjacent to the \"MD SUHEL\" brand text.",
+        "The logo is loaded from a static asset path under frontend/public/assets/generated (no backend image routing).",
+        "The logo maintains good alignment and sizing on both mobile and desktop header layouts."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/md-suhel-logo.dim_256x256.png",
+          "operation": "create",
+          "description": "Add the generated logo asset file at the required static location: frontend/public/assets/generated/md-suhel-logo.dim_256x256.png."
+        },
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Render the static logo image (loaded from frontend/public/assets/generated/md-suhel-logo.dim_256x256.png) next to the \"MD SUHEL\" brand text, with responsive sizing/alignment that works on mobile and desktop header layouts."
+        }
+      ]
+    }
+  ]
+}

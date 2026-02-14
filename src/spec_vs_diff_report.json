@@ -1,0 +1,43 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-14T17:42:41.969Z",
+  "summary": "Brand text and document title were updated to “MD SUHEL”, footer copyright was updated, and a blue-themed palette was applied via CSS variables. The header now references a generated logo image under /assets/generated, but the actual logo asset file does not appear to have been added in this diff. Some additional non-requested metadata/attribution changes were introduced.",
+  "missing_requirements": [
+    {
+      "id": "REQ-15",
+      "requirement": "Add a logo in the header using a generated static image selected by the system, loaded from a static asset path under frontend/public/assets/generated.",
+      "reason": "Header references the logo path, but the diff shows no added files; the required static image asset does not appear to have been created/added under frontend/public/assets/generated.",
+      "evidence": [
+        "frontend/src/components/Header.tsx (references /assets/generated/md-suhel-logo.dim_256x256.png)",
+        "file-diff summary: Added files: none"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Added/modified footer attribution link to caffeine.ai with UTM tracking and a CoffeeScript icon.",
+      "reason": "BuildRequest only asked for branding name updates, blue background theme, and a header logo. It did not request adding or changing third-party attribution/UTM links or adding new icons.",
+      "evidence": [
+        "frontend/src/components/Footer.tsx (SiCoffeescript import; “Built with ... using caffeine.ai” link with UTM parameters)"
+      ]
+    },
+    {
+      "description": "Updated/introduced repository metadata summaries (frontend-file-summaries.txt and project_state.json) referencing the branding changes.",
+      "reason": "BuildRequest requirements are frontend UI changes (branding/theme/logo). It did not request adding/updating project metadata summary files.",
+      "evidence": [
+        "frontend-file-summaries.txt",
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/index.html",
+    "frontend/src/components/Footer.tsx",
+    "frontend/src/components/Header.tsx",
+    "frontend/src/index.css",
+    "project_state.json"
+  ]
+}

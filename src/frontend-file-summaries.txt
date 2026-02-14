@@ -1,0 +1,15 @@
+{
+  "frontend/src/App.tsx": "Main application component with TanStack Router setup, defining routes for the certificate application form, my applications list, and application detail pages, wrapped in a layout with header and footer.",
+  "frontend/src/components/Header.tsx": "Navigation header component with MD SUHEL branding, logo image from static assets, navigation links to Apply and My Applications pages, and Internet Identity sign-in/sign-out button.",
+  "frontend/src/components/Footer.tsx": "Footer component displaying copyright information for MD SUHEL and attribution link to caffeine.ai with UTM tracking parameters.",
+  "frontend/src/pages/ResidentialCertificateApplicationPage.tsx": "Comprehensive multi-section form page for residential certificate applications with client-side validation, submission handling, and success/error states displaying the returned application number.",
+  "frontend/src/pages/MyApplicationsPage.tsx": "List view page showing all applications submitted by the authenticated user, with loading/empty/error states and navigation to individual application details.",
+  "frontend/src/pages/ApplicationDetailPage.tsx": "Detailed view page displaying all fields of a submitted application organized into sections (personal, contact, address, professional, additional information) with status badge.",
+  "frontend/src/components/RequireLoginNotice.tsx": "Reusable alert component prompting users to sign in when authentication is required for accessing features.",
+  "frontend/src/lib/applicationFormMapping.ts": "Utility module that converts frontend form data structure to backend ApplicationForm type, including gender and nationality enum mappings.",
+  "frontend/src/lib/formatters.ts": "Utility functions for formatting timestamps (bigint to readable date/time) and application numbers (with APP- prefix and zero-padding).",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching own applications list and individual application details from the backend with proper caching and loading states.",
+  "frontend/src/index.css": "Global styles with OKLCH color system defining a blue-themed palette with rich blue backgrounds and proper contrast for both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration with extended color tokens, Inter font family, custom border radius, shadows, and animation keyframes for the government-service aesthetic.",
+  "frontend/index.html": "HTML entry point with updated document title to \"MD SUHEL - Certificate Services\" for browser tab display."
+}

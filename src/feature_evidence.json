@@ -1,0 +1,64 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-app-branding-to-use-the-website-name-md-suhel-in-all-existing-global-branding-locations-header-brand-title-footer-copyright-text-and-the-html-document-title",
+      "featureTitle": "Update the app branding to use the website name \"MD SUHEL\" in all existing global branding locations (header brand/title, footer copyright text, and the HTML document title).",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/components/Footer.tsx",
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-blue-background-theme-across-the-application-so-the-overall-page-background-is-visibly-blue-while-keeping-text-readable-and-maintaining-consistent-styling-for-cards-borders-and-interactive-elements",
+      "featureTitle": "Apply a blue background theme across the application so the overall page background is visibly blue while keeping text readable and maintaining consistent styling for cards, borders, and interactive elements.",
+      "files": [
+        "frontend/src/index.css"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-14"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-logo-in-the-header-using-a-generated-static-image-selected-by-the-system-since-the-user-did-not-provide-a-logo-and-display-it-next-to-the-md-suhel-site-name",
+      "featureTitle": "Add a logo in the header using a generated static image selected by the system (since the user did not provide a logo), and display it next to the \"MD SUHEL\" site name.",
+      "files": [
+        "frontend/src/components/Header.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-15"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

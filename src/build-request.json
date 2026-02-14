@@ -1,0 +1,79 @@
+{
+  "kind": "build_request",
+  "title": "Add MD SUHEL branding, blue background, and selected logo",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-13",
+      "text": "Update the app branding to use the website name \"MD SUHEL\" in all existing global branding locations (header brand/title, footer copyright text, and the HTML document title).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Yes loga daal de or background blue colour and website name md suhel",
+          "Yes loga dal de or background blue colour and website name md suhel kar de please"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Header brand text displays \"MD SUHEL\" instead of the current name.",
+        "Footer copyright line displays \"© {year} MD SUHEL. All rights reserved.\"",
+        "The browser tab/document title includes \"MD SUHEL\" (update frontend/index.html)."
+      ]
+    },
+    {
+      "id": "REQ-14",
+      "text": "Apply a blue background theme across the application so the overall page background is visibly blue while keeping text readable and maintaining consistent styling for cards, borders, and interactive elements.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "background blue colour"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The app background is clearly blue on the main pages (application form, my applications, application detail).",
+        "Text and form controls remain accessible/legible with sufficient contrast against the new blue background.",
+        "No layout regressions: header, main content, and footer still render with proper spacing and separation."
+      ]
+    },
+    {
+      "id": "REQ-15",
+      "text": "Add a logo in the header using a generated static image selected by the system (since the user did not provide a logo), and display it next to the \"MD SUHEL\" site name.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Yes loga daal de",
+          "You  select image jo good ho"
+        ]
+      },
+      "acceptanceCriteria": [
+        "A logo image is rendered in the header adjacent to the \"MD SUHEL\" brand text.",
+        "The logo is loaded from a static asset path under frontend/public/assets/generated (no backend image routing).",
+        "The logo maintains good alignment and sizing on both mobile and desktop header layouts."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit any files under frontend/src/components/ui (compose existing UI components only).",
+    "Do not modify immutable frontend hook paths (frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useActor.ts, frontend/src/main.tsx).",
+    "Keep backend unchanged; branding/theme/logo changes are frontend-only."
+  ],
+  "nonGoals": [
+    "Do not add new pages or change application form fields/validation.",
+    "Do not implement uploading a custom user-provided logo (use a system-selected generated logo only).",
+    "Do not change authentication behavior (Internet Identity sign-in/out flow stays as-is)."
+  ],
+  "imageRequirements": {
+    "required": [
+      "Minimal modern monogram logo with the letters \"MS\" in a blue-and-white palette, flat vector style, transparent background (md-suhel-logo.dim_256x256.png)"
+    ],
+    "edits": []
+  }
+}

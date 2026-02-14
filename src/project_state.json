@@ -1,0 +1,152 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 7,
+  "summary": "Website project for collecting user-submitted data via forms (e.g., Residential Certificate application details collection), with requested branding updates (site name \"MD SUHEL\", blue background, and a selected logo in the header).",
+  "architectural_notes": [
+    "Project scope shifted from fitness training website to a form-based data collection website for certificate/application details (e.g., Residential Certificate).",
+    "Branding requirement update: site title/name should be “MD SUHEL”, use a blue background, and include a header logo (user may not provide an asset; select a suitable image if needed)."
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Minimal modern monogram logo with the letters \"MS\" in a blue-and-white palette, flat vector style, transparent background (md-suhel-logo.dim_256x256.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-marketing-style-landing-page-for-a-fitness-training-website-with-clear-navigation-and-sections-for-hero-value-proposition-primary-cta-featured-training-programs-how-it-works-testimonials-pricing-and-footer",
+      "title": "Create a responsive marketing-style landing page for a fitness training website with clear navigation and sections for: Hero (value proposition + primary CTA), Featured Training Programs, How It Works, Testimonials, Pricing, and Footer.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-internet-identity-sign-in-sign-out-in-the-ui-and-gate-workout-logging-and-progress-pages-behind-authentication-unauthenticated-users-can-still-view-marketing-programs-pages",
+      "title": "Implement Internet Identity sign-in/sign-out in the UI and gate workout logging and progress pages behind authentication (unauthenticated users can still view marketing/Programs pages).",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-programs-browsing-experience-list-training-programs-with-program-detail-pages-including-title-difficulty-duration-equipment-description-and-a-sample-weekly-schedule",
+      "title": "Add a Programs browsing experience: list training programs with program detail pages, including title, difficulty, duration, equipment, description, and a sample weekly schedule.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-workout-logging-for-authenticated-users-allow-selecting-a-date-selecting-a-program-optional-entering-workout-name-duration-notes-and-saving-the-entry",
+      "title": "Add workout logging for authenticated users: allow selecting a date, selecting a program (optional), entering workout name, duration, notes, and saving the entry.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-progress-page-for-authenticated-users-that-shows-weekly-workout-count-total-minutes-trained-this-week-and-a-simple-history-list-filtered-by-date-range",
+      "title": "Add a Progress page for authenticated users that shows: weekly workout count, total minutes trained this week, and a simple history list filtered by date range.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-cohesive-visual-theme-appropriate-for-fitness-training-distinct-color-palette-typography-scale-and-consistent-component-styling-and-use-it-consistently-across-all-pages-and-states-logged-in-out-empty-states-errors-avoid-blue-purple-as-primary-brand-colors",
+      "title": "Apply a cohesive visual theme appropriate for fitness training (distinct color palette, typography scale, and consistent component styling) and use it consistently across all pages and states (logged in/out, empty states, errors). Avoid blue/purple as primary brand colors.",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-images-to-the-app-and-use-them-in-the-ui-a-hero-banner-image-on-the-landing-page-and-small-program-category-icons-on-the-programs-page-store-images-under-frontend-public-assets-generated-and-reference-them-directly-from-the-frontend",
+      "title": "Add generated static images to the app and use them in the UI: a hero banner image on the landing page and small program category icons on the Programs page. Store images under frontend/public/assets/generated and reference them directly from the frontend.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-user-flow-for-submitting-a-residential-certificate-application-a-dedicated-page-with-a-multi-section-form-that-collects-applicant-details-and-submits-them-to-the-backend-then-shows-a-clear-success-confirmation-with-a-generated-application-reference-number",
+      "title": "Add a new user flow for submitting a Residential Certificate application: a dedicated page with a multi-section form that collects applicant details and submits them to the backend, then shows a clear success confirmation with a generated application reference number.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-my-applications-page-that-lets-a-user-view-their-submitted-applications-and-open-an-application-detail-view-showing-all-stored-fields-and-current-status-e-g-submitted",
+      "title": "Add a \"My Applications\" page that lets a user view their submitted applications and open an application detail view showing all stored fields and current status (e.g., \"Submitted\").",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-and-apply-a-coherent-government-service-style-visual-theme-neutral-trustworthy-palette-strong-typographic-hierarchy-clear-form-affordances-and-use-it-consistently-across-the-new-application-pages-including-loading-empty-error-and-success-states",
+      "title": "Create and apply a coherent, government-service-style visual theme (neutral, trustworthy palette; strong typographic hierarchy; clear form affordances) and use it consistently across the new application pages, including loading, empty, error, and success states.",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-app-branding-to-use-the-website-name-md-suhel-in-all-existing-global-branding-locations-header-brand-title-footer-copyright-text-and-the-html-document-title",
+      "title": "Update the app branding to use the website name \"MD SUHEL\" in all existing global branding locations (header brand/title, footer copyright text, and the HTML document title).",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-blue-background-theme-across-the-application-so-the-overall-page-background-is-visibly-blue-while-keeping-text-readable-and-maintaining-consistent-styling-for-cards-borders-and-interactive-elements",
+      "title": "Apply a blue background theme across the application so the overall page background is visibly blue while keeping text readable and maintaining consistent styling for cards, borders, and interactive elements.",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-logo-in-the-header-using-a-generated-static-image-selected-by-the-system-since-the-user-did-not-provide-a-logo-and-display-it-next-to-the-md-suhel-site-name",
+      "title": "Add a logo in the header using a generated static image selected by the system (since the user did not provide a logo), and display it next to the \"MD SUHEL\" site name.",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create a website for fitness training use",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Backend: implement Motoko data models and stable storage for (a) training programs (read-only for now) and (b) per-user workout logs keyed by authenticated principal; expose query/update methods needed by the frontend for listing programs, reading a program, creating a workout log, listing logs, and computing progress aggregates.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-8",
+      "summary": "Build a form-based website to collect user details for applications (e.g., Residential Certificate), including data entry forms and submission flow.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Implement Motoko data models and stable storage for Residential Certificate applications, including create and read methods needed by the UI.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "MD SUHEL",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
